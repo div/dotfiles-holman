@@ -1,0 +1,35 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"AdvancedNewFile",
+		"Alignment",
+		"AlignTab",
+		"All Autocomplete",
+		"Better CoffeeScript",
+		"Clipboard Manager",
+		"DashDoc",
+		"Elixir",
+		"ElixirSublime",
+		"GitGutter",
+		"JSX",
+		"Package Control",
+		"Rails Migrations List",
+		"Railscasts Extended",
+		"Ruby Hash Converter",
+		"Ruby on Rails snippets",
+		"Ruby Slim",
+		"RubyTest",
+		"Sass",
+		"SideBarEnhancements",
+		"SublimeLinter",
+		"SublimeLinter-contrib-elixirc",
+		"SublimeLinter-rubocop",
+		"SublimeLinter-ruby",
+		"Theme - SoDaReloaded",
+		"TypeScript"
+	]
+}
