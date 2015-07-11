@@ -21,4 +21,8 @@ then
 
 fi
 
+# Install homebrew packages
+# brew install grc coreutils spark
+# brew install caskroom/cask/brew-cask
+# brew bundle
 exit 0
