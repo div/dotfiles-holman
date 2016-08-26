@@ -26,7 +26,7 @@ _run-with-bundler() {
     grep_filename=`echo $2 | sed 's/:.*$//g'`
 
     #(grep -R 'rails_helper' $grep_filename) > /dev/null
-    (find "$grep_filename" -type f -exec fgrep spec_helper {} \+) > /dev/null
+    (find "$grep_filename" -type f -exec fgrep rails_helper {} \+) > /dev/null
     if [ $? -eq 1 ]; then # no match; we have a stand-alone spec
       no_rails=true
     fi

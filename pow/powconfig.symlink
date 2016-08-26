@@ -1,0 +1,2 @@
+source /usr/local/share/chruby/chruby.sh
+export POW_EXT_DOMAINS=ngrok.com
