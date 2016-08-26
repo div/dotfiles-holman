@@ -44,6 +44,3 @@ defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 
 echo "Done. Note that some of these changes require a logout/restart to take effect."
 
-
-# Set default theme for terminal
-# source $ZSH/terminal/set-default-theme.sh
