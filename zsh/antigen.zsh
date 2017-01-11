@@ -2,10 +2,10 @@ source $ZSH/lib/antigen/antigen.zsh
 
 antigen bundle git
 antigen bundle rails
-antigen bundle zsh-users/zsh-completions
-antigen bundle zsh-users/zsh-history-substring-search
+# antigen bundle zsh-users/zsh-completions
+# antigen bundle zsh-users/zsh-history-substring-search
 
-antigen apply
+# antigen apply
 
 zmodload zsh/terminfo
 # bindkey "$terminfo[kcuu1]" history-substring-search-up

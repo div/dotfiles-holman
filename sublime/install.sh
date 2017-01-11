@@ -1,6 +1,6 @@
 #!/bin/sh
 
-brew cask install sublime-text3
+brew cask install sublime-text
 open ~/Applications/Sublime\ Text.app
 
 source $ZSH/sublime/icon-replacement.sh
