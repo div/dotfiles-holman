@@ -2,6 +2,8 @@ cask_args appdir: '/Applications'
 
 tap 'homebrew/bundle'
 
+brew "zsh"
+brew "zplug"
 # brew 'ack'
 brew 'coreutils'
 brew 'git'
@@ -15,7 +17,7 @@ brew 'openssl'
 brew 'node'
 brew 'readline'
 brew 'postgresql'
-brew 'services start postgresql'
+# brew 'services start postgresql'
 brew 'chruby'
 brew 'ruby-install'
 # brew 'rbenv'
@@ -30,7 +32,7 @@ brew 'ssh-copy-id'
 brew 'imagemagick'
 # brew 'dash'
 brew 'redis'
-brew 'services start redis'
+# brew 'services start redis'
 brew 'elixir'
 
 # cask '1password'
