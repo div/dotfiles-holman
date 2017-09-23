@@ -1,5 +1,5 @@
-# shortcut to this dotfiles path is $ZSH
-export ZSH=$HOME/.dotfiles
+# # shortcut to this dotfiles path is $DOTZSH
+export DOTZSH=$HOME/.dotfiles
 
 # your project folder that we can `c [tab]` to
 export PROJECTS=~/code
@@ -12,30 +12,83 @@ then
   source ~/.localrc
 fi
 
-# all of our zsh files
-typeset -U config_files
-config_files=($ZSH/**/*.zsh)
+# # all of our zsh files
+# typeset -U config_files
+# config_files=($DOTZSH/**/*.zsh)
 
-# load the path files
-for file in ${(M)config_files:#*/path.zsh}
-do
-  source $file
-done
+# # load the path files
+# for file in ${(M)config_files:#*/path.zsh}
+# do
+#   source $file
+# done
 
-# load everything but the path and completion files
-for file in ${${config_files:#*/path.zsh}:#*/completion.zsh}
-do
-  source $file
-done
+# # load everything but the path and completion files
+# for file in ${${config_files:#*/path.zsh}:#*/completion.zsh}
+# do
+#   source $file
+# done
 
-# initialize autocomplete here, otherwise functions won't be loaded
-autoload -U compinit
-compinit
+# # initialize autocomplete here, otherwise functions won't be loaded
+# autoload -U compinit
+# compinit
 
-# load every completion after autocomplete loads
-for file in ${(M)config_files:#*/completion.zsh}
-do
-  source $file
-done
+# # load every completion after autocomplete loads
+# for file in ${(M)config_files:#*/completion.zsh}
+# do
+#   source $file
+# done
 
-unset config_files
+# unset config_files
+
+
+# Set umask
+umask g-w,o-rwx
+
+# If command is a path, cd into it
+setopt auto_cd
+
+# Colourfull messages
+e_header()  { echo -e "\n\033[1m$@\033[0m"; }
+e_success() { echo -e " \033[1;32m✔\033[0m  $@"; }
+e_error()   { echo -e " \033[1;31m✖\033[0m  $@"; }
+
+# Croptesting
+#source ${ZDOTDIR:-${HOME}}/.config/zsh/frameworks.zsh
+
+# Load zgen only if a user types a zgen command
+zgen () {
+  if [[ ! -s ${ZDOTDIR:-${HOME}}/.zgen/zgen.zsh ]]; then
+    git clone --recursive https://github.com/tarjoilija/zgen.git ${ZDOTDIR:-${HOME}}/.zgen
+  fi
+  source ${ZDOTDIR:-${HOME}}/.zgen/zgen.zsh
+  zgen "$@"
+}
+
+# Generate zgen init script if needed
+if [[ ! -s ${ZDOTDIR:-${HOME}}/.zgen/init.zsh ]]; then
+  zgen load zsh-users/zsh-autosuggestions
+  zgen load zdharma/fast-syntax-highlighting
+  zgen load zsh-users/zsh-history-substring-search
+  zgen oh-my-zsh plugins/git
+  zgen oh-my-zsh plugins/rails
+  # zgen oh-my-zsh plugins/shrink-path
+  zgen save
+  zcompile ${ZDOTDIR:-${HOME}}/.zgen/init.zsh
+fi
+
+# # Load dircolors
+# if [ -s ${ZDOTDIR:-${HOME}}/.dircolors ]; then
+#   if (( $+commands[gdircolors] )); then
+#     eval $(command gdircolors -b ${ZDOTDIR:-${HOME}}/.dircolors)
+#   elif (( $+commands[dircolors] )); then
+#     eval $(command dircolors -b ${ZDOTDIR:-${HOME}}/.dircolors)
+#   fi
+# fi
+
+# Load settings
+if [[ ! -s ${DOTZSH:-${HOME}}/zsh/cache/settings.zsh ]]; then
+  source ${DOTZSH:-${HOME}}/zsh/functions.zsh
+  recreateCachedSettingsFile
+fi
+source ${DOTZSH:-${HOME}}/zsh/cache/settings.zsh
+

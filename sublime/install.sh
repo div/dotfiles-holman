@@ -3,8 +3,8 @@
 brew cask install sublime-text
 open ~/Applications/Sublime\ Text.app
 
-source $ZSH/sublime/icon-replacement.sh
-source $ZSH/sublime/package-control.sh
+source $DOTZSH/sublime/icon-replacement.sh
+source $DOTZSH/sublime/package-control.sh
 
 # Create symlink for Sublime Text User directory
 
@@ -25,5 +25,5 @@ if [ -d "$SUBLIME_USER_PATH" ]; then # check whether the directory already exist
     fi
 fi
 echo "Creating symlink to User in $SUBLIME_USER_PATH"
-ln -s $ZSH/sublime/User "$SUBLIME_USER_PATH"
+ln -s $DOTZSH/sublime/User "$SUBLIME_USER_PATH"
 echo "...done"

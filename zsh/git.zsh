@@ -1,3 +1,13 @@
+# Uses git's autocompletion for inner commands. Assumes an install of git's
+# bash `git-completion` script at $completion below (this is where Homebrew
+# tosses it, at least).
+completion='$(brew --prefix)/share/zsh/site-functions/_git'
+
+if test -f $completion
+then
+  source $completion
+fi
+
 # Use `hub` as our git wrapper:
 #   http://defunkt.github.com/hub/
 hub_path=$(which hub)
@@ -18,3 +28,4 @@ alias gcb='git copy-branch-name'
 alias gb='git branch'
 alias gs='git status -sb' # upgrade your git if -sb breaks for you. it's fun.
 alias gac='git add -A && git commit -m'
+

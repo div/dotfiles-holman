@@ -1,1 +1,1 @@
-source $ZSH/terminal/set-default-theme.sh
+source $DOTZSH/terminal/set-default-theme.sh

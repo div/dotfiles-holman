@@ -1,4 +1,4 @@
-# source $ZSH/lib/antigen/antigen.zsh
+# source $DOTZSH/lib/antigen/antigen.zsh
 # source /usr/local/share/antigen/antigen.zsh
 
 # # antigen use oh-my-zsh
