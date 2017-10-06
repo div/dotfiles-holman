@@ -1,4 +1,4 @@
 {
-	"last_test_run": "zsh -c 'source ~/.zshrc && rspec spec/models/city_suggestion_spec.rb:85'",
+	"last_test_run": "zsh -c 'source ~/.zshrc && rspec spec/requests/api/v2/consumer_spec.rb:31'",
 	"last_test_working_dir": "/Users/div/code/grabr"
 }
