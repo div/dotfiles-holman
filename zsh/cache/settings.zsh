@@ -26,9 +26,9 @@ autoload -Uz compinit && \
 #
 alias reload!='. ~/.zshrc'
 
-alias cls='clear' # Good 'ol Clear Screen command
-
-alias sublime='subl'
+# alias cls='clear' # Good 'ol Clear Screen command
+#
+# alias sublime='subl'
 
 
 export PATH="./bin:/usr/local/bin:/usr/local/sbin:$DOTZSH/bin:$PATH"
@@ -83,12 +83,6 @@ alias bi="bundle install"
 alias bl="bundle list"
 alias bp="bundle package"
 alias bu="bundle update"
-
-# alias sc='script/console'
-# alias sg='script/generate'
-# alias sd='script/destroy'
-#
-# bundler_exec.zsh:
 #
 # The following is based on https://github.com/gma/bundler-exec
 
@@ -349,24 +343,6 @@ compileAllTheThings () {
   done
 }
 
-# Update dotfiles
-# rd () {
-#   e_header "Updating dotfiles..."
-#   pushd -q "${DOTZSH:-${HOME}}/dotfiles/"
-#   git pull
-#   if (( $? )) then
-#     echo
-#     git status --short
-#     echo
-#     e_error "(ノ°Д°）ノ︵ ┻━┻)"
-#     popd -q
-#     return 1
-#   else
-#     ./setup.sh
-#   fi
-#   popd -q
-# }
-
 # Load all custom settings from one cached file
 recreateCachedSettingsFile() {
   setopt EXTENDED_GLOB
@@ -577,4 +553,3 @@ function title() {
     ;;
   esac
 }
-

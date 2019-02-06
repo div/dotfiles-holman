@@ -11,7 +11,7 @@ then
   echo "  Installing ruby-install for you."
   brew install ruby-install > /tmp/ruby-install-install.log
 fi
-
+echo "  Install Ruby"
 RUBY_VERSION=$(cat ~/.ruby-version)
 ruby-install ruby $RUBY_VERSION --no-reinstall
 source $DOTZSH/ruby/chruby.zsh

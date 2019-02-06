@@ -1,4 +1,0 @@
-{
-  "run_rspec_command": "zsh -c 'source ~/.zshrc && rspec {relative_path}'",
-  "run_single_rspec_command": "zsh -c 'source ~/.zshrc && rspec {relative_path}:{line_number}'",
-}
