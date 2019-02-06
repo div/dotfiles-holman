@@ -1,9 +1,61 @@
 "*":
+  "atom-beautify":
+    crystal:
+      beautify_on_save: true
+    css:
+      beautify_on_save: true
+    html:
+      beautify_on_save: true
+    js:
+      disabled: true
+    jsx:
+      disabled: true
+    markdown:
+      beautify_on_save: true
+    nginx:
+      beautify_on_save: true
+    ruby:
+      default_beautifier: "Ruby Beautify"
+  "autocomplete-modules":
+    babelPluginModuleResolver: true
+    webpack: true
+  "autocomplete-plus":
+    backspaceTriggersAutocomplete: true
+    confirmCompletion: "tab always, enter when suggestion explicitly selected"
+    maxVisibleSuggestions: 5
+  "autocomplete-ruby":
+    suggestionPriority: true
   core:
+    closeDeletedFileTabs: true
+    customFileTypes:
+      "source.ini": [
+        ".buckconfig"
+        ".hgrc"
+        ".flowconfig"
+      ]
+      "source.json": [
+        "BUCK.autodeps"
+      ]
+      "source.python": [
+        "BUCK"
+      ]
     disabledPackages: [
       "background-tips"
       "exception-reporting"
       "metrics"
+      "react"
+      "linter-rubocop"
+      "aligner"
+      "aligner-javascript"
+      "aligner-ruby"
+      "linter"
+      "linter-elixirc"
+      "linter-ruby"
+      "linter-slim"
+      "linter-ui-default"
+      "zentabs"
+      "language-slim"
+      "autocomplete-ruby"
     ]
     followSymlinks: false
     hideGitIgnoredFiles: true
@@ -14,19 +66,39 @@
       "repositories"
       "tmp"
       "vendor"
+      "rspec-results.txt"
     ]
-    telemetryConsent: "limited"
+    projectHome: "/Users/div/code"
+    telemetryConsent: "no"
     themes: [
-      "atom-dark-ui"
+      "one-dark-ui"
       "railscast-theme"
     ]
+    titleBar: "custom"
+    useTreeSitterParsers: true
+    warnOnLargeFileLimit: 1
   editor:
     fontFamily: "Menlo"
     invisibles: {}
     showIndentGuide: true
     softWrapAtPreferredLineLength: true
   "go-plus":
-    goPath: "/Users/holman/Code/go"
+    panel:
+      currentHeight: "24.11111111111111vh"
+    panelDisplayMode: "closed"
+    test: {}
+  "linter-eslint":
+    useGlobalEslint: true
+  "linter-rubocop": {}
+  "linter-ui-default":
+    panelHeight: 75
+  nuclide:
+    "atom-ide-code-format":
+      formatOnType: false
+    "nuclide-flow": {}
+  "prettier-atom":
+    formatOnSaveOptions:
+      enabled: true
   "release-notes":
     viewedVersion: "0.89.0"
   "spell-check":
@@ -36,5 +108,16 @@
       "text.git-commit"
       "text.html.basic"
     ]
+  stylefmt:
+    formatOnSave: true
+  "tree-view":
+    hideVcsIgnoredFiles: true
   welcome:
     showOnStartup: false
+".js.jsx.react.source":
+  editor:
+    autoIndent: true
+".js.jsx.source":
+  editor:
+    autoIndent: false
+    autoIndentOnPaste: false
