@@ -14,7 +14,7 @@ fi
 echo "  Install Ruby"
 RUBY_VERSION=$(cat ~/.ruby-version)
 ruby-install ruby $RUBY_VERSION --no-reinstall
-source $DOTZSH/ruby/chruby.zsh
+source $DOTZSH/zsh/chruby.zsh
 chruby $RUBY_VERSION
 gem update --system
 gem install bundler
