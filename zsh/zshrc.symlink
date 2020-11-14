@@ -92,3 +92,7 @@ if [[ ! -s ${DOTZSH:-${HOME}}/zsh/cache/settings.zsh ]]; then
 fi
 source ${DOTZSH:-${HOME}}/zsh/cache/settings.zsh
 
+
+. $HOME/.asdf/asdf.sh
+
+. $HOME/.asdf/completions/asdf.bash

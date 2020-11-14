@@ -42,7 +42,7 @@ done
 export ZSH=$HOME/.dotfiles
 
 # Set macOS defaults
-$DOTZSH/macos/set-defaults.sh
+# $DOTZSH/macos/set-defaults.sh
 
 # Install homebrew
 $DOTZSH/homebrew/install.sh 2>&1

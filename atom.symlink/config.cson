@@ -45,17 +45,12 @@
       "metrics"
       "react"
       "linter-rubocop"
-      "aligner"
       "aligner-javascript"
-      "aligner-ruby"
-      "linter"
-      "linter-elixirc"
-      "linter-ruby"
       "linter-slim"
-      "linter-ui-default"
-      "zentabs"
       "language-slim"
       "autocomplete-ruby"
+      "rspec"
+      "autocomplete-elixir"
     ]
     followSymlinks: false
     hideGitIgnoredFiles: true
@@ -79,9 +74,13 @@
     warnOnLargeFileLimit: 1
   editor:
     fontFamily: "Menlo"
+    fontSize: 16
     invisibles: {}
     showIndentGuide: true
     softWrapAtPreferredLineLength: true
+  "fuzzy-finder":
+    scoringSystem: "fast"
+    useRipGrep: true
   "go-plus":
     panel:
       currentHeight: "24.11111111111111vh"
@@ -91,7 +90,7 @@
     useGlobalEslint: true
   "linter-rubocop": {}
   "linter-ui-default":
-    panelHeight: 75
+    panelHeight: 300
   nuclide:
     "atom-ide-code-format":
       formatOnType: false
@@ -110,8 +109,7 @@
     ]
   stylefmt:
     formatOnSave: true
-  "tree-view":
-    hideVcsIgnoredFiles: true
+  "tree-view": {}
   welcome:
     showOnStartup: false
 ".js.jsx.react.source":

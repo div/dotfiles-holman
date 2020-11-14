@@ -55,6 +55,7 @@ cask 'atom'
 # cask 'dropbox'
 cask 'desktop'
 cask 'calibre'
+cask 'windscribe'
 # cask 'sublime-text'
 # cask 'osxfuse'
 

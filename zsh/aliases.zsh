@@ -19,5 +19,4 @@ then
   alias la='gls -A --color'
 fi
 
-export EDITOR='subl -w'
-
+export EDITOR='atom'

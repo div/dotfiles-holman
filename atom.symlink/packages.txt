@@ -8,11 +8,9 @@ elixir-cmd@0.2.9
 intentions@1.1.5
 language-elixir@0.22.1
 language-rspec@0.12.1
-language-slim@1.0.0
 linter@2.2.0
 linter-elixirc@1.7.0
 linter-ruby@1.2.6
-linter-slim@1.0.0
 linter-ui-default@1.6.10
 multi-cursor@2.1.5
 rails-latest-migration@1.1.6
@@ -22,6 +20,4 @@ railscast-theme@0.4.0
 rspec@0.4.0
 rspec-snippets@0.4.0
 ruby-block@0.3.6
-ruby-slim@0.2.0
 zentabs@0.8.8
-
