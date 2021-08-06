@@ -14,6 +14,11 @@ brew 'openssl'
 brew 'readline'
 brew 'ssh-copy-id'
 brew 'wget'
+brew 'gnupg'
+
+brew 'imagemagick'
+brew 'redis'
+brew 'postgres'
 
 # Erlang
 brew 'autoconf'
@@ -28,7 +33,7 @@ cask 'transmission'
 cask 'telegram'
 cask 'vlc'
 cask 'atom'
+cask 'github'
 
-cask 'desktop'
 cask 'calibre'
 cask 'windscribe'

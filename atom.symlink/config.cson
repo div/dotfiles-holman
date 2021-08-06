@@ -1,4 +1,6 @@
 "*":
+  "aligner-ruby":
+    ",-rightSpace": false
   "atom-beautify":
     crystal:
       beautify_on_save: true
@@ -44,13 +46,13 @@
       "exception-reporting"
       "metrics"
       "react"
-      "linter-rubocop"
       "aligner-javascript"
       "linter-slim"
       "language-slim"
       "autocomplete-ruby"
       "rspec"
       "autocomplete-elixir"
+      "linter-elixirc"
     ]
     followSymlinks: false
     hideGitIgnoredFiles: true
@@ -74,7 +76,6 @@
     warnOnLargeFileLimit: 1
   editor:
     fontFamily: "Menlo"
-    fontSize: 16
     invisibles: {}
     showIndentGuide: true
     softWrapAtPreferredLineLength: true
@@ -88,7 +89,9 @@
     test: {}
   "linter-eslint":
     useGlobalEslint: true
-  "linter-rubocop": {}
+  "linter-rubocop":
+    command: "/Users/div/.asdf/shims/bundle exec rubocop"
+    disableWhenNoConfigFile: true
   "linter-ui-default":
     panelHeight: 300
   nuclide:

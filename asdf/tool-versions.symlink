@@ -1,9 +1,7 @@
 # Remove all versions for fresh install
 
-erlang 23.1.2
-elixir 1.11.2
+elixir 1.12.1-otp-24
 nodejs 15.2.0
-ruby 2.7.1
-imagemagick 7.0.10-37
-redis 6.0.9
-postgresql 13.1
+ruby 2.7.2
+erlang 24.0
+rust 1.52.1
