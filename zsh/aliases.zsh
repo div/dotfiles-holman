@@ -16,4 +16,4 @@ then
   alias la='gls -A --color'
 fi
 
-export EDITOR='atom'
+export EDITOR='codium'
