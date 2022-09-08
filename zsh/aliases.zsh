@@ -2,9 +2,6 @@ alias reload!='. ~/.zshrc'
 
 alias cls='clear' # Good 'ol Clear Screen command
 
-alias sublime='subl'
-
-
 export PATH="./bin:/usr/local/bin:/usr/local/sbin:$DOTZSH/bin:$PATH"
 export MANPATH="/usr/local/man:/usr/local/git/man:$MANPATH"
 

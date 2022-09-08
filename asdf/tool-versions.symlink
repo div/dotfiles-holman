@@ -1,7 +1,7 @@
 # Remove all versions for fresh install
 
-elixir 1.12.1-otp-24
-nodejs 15.2.0
-ruby 2.7.2
-erlang 24.0
-rust 1.52.1
+elixir 1.14.0-otp-25
+erlang 25.0.4
+#nodejs 15.2.0
+ruby 3.1.1
+#rust 1.52.1
