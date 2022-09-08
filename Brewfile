@@ -2,58 +2,38 @@ cask_args appdir: '/Applications'
 
 tap 'homebrew/bundle'
 
+# Core
+brew "zsh"
+# brew "zplug"
 # brew 'ack'
 brew 'coreutils'
+brew 'curl'
 brew 'git'
-# brew 'go'
-# brew 'grc'
-brew 'imagemagick'
-# brew 'jp2a'
-# brew 'libcaca', args: ['with-imlib2']
 brew 'libgit2'
 brew 'openssl'
-brew 'node'
 brew 'readline'
-brew 'postgresql'
-brew 'services start postgresql'
-brew 'chruby'
-brew 'ruby-install'
-# brew 'rbenv'
-# brew 'roundup'
-# brew 'spaceman-diff'
-# brew 'spark'
-brew 'unrar'
-brew 'wget'
-# brew 'youtube-dl'
-
 brew 'ssh-copy-id'
-brew 'imagemagick'
-# brew 'dash'
-brew 'redis'
-brew 'services start redis'
-brew 'elixir'
+brew 'wget'
+# brew 'gnupg'
 
-# cask '1password'
-# cask 'adium'
-# cask 'atom'
-# cask 'firefox'
-# cask 'garmin-express'
+# brew 'imagemagick'
+brew 'redis'
+brew 'postgres'
+
+# Erlang
+# brew 'autoconf'
+# brew 'wxmac'
+
+# Version manager
+brew "asdf"
+
 cask 'google-chrome'
-# cask 'handbrake'
-# cask 'mapbox-studio'
-# cask 'seashore'
-cask 'slack'
-# cask 'steam'
-cask 'transmission'
-cask 'tunnelbear'
+# cask 'slack'
+# cask 'transmission'
 cask 'telegram'
 cask 'vlc'
+cask 'atom'
+cask 'github'
 
-cask 'dropbox'
-cask 'github-desktop'
 cask 'calibre'
-cask 'sublime-text'
-cask 'osxfuse'
-
-tap 'cryfs/tap'
-brew 'cryfs'
+cask 'windscribe'

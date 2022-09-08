@@ -14,3 +14,4 @@ sublime/User/*.cache
 sublime/User/*.pyc
 sublime/User/Package Control.*
 .DS_Store
+Brewfile.lock.json

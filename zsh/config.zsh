@@ -1,3 +1,5 @@
+export DOTZSH=$HOME/.dotfiles
+
 if [[ -n $SSH_CONNECTION ]]; then
   export PS1='%m:%3~$(git_info_for_prompt)%# '
 else
@@ -7,9 +9,9 @@ fi
 export LSCOLORS="exfxcxdxbxegedabagacad"
 export CLICOLOR=true
 
-fpath=($ZSH/functions $fpath)
+fpath=($DOTZSH/functions $fpath)
 
-autoload -U $ZSH/functions/*(:t)
+autoload -U $DOTZSH/functions/*(:t)
 
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
@@ -49,3 +51,11 @@ bindkey '^?' backward-delete-char
 
 bindkey '^[^[[D' backward-word
 bindkey '^[^[[C' forward-word
+
+bindkey '^[[A' history-beginning-search-backward
+bindkey '^[[B' history-beginning-search-forward
+# bindkey "^[[A'" history-substring-search-up
+# bindkey "^[[B" history-substring-search-down
+
+# bindkey '^[[A' history-substring-search-up
+# bindkey '^[[B' history-substring-search-down

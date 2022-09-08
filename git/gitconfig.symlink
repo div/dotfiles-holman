@@ -5,9 +5,9 @@
         protocol = https
 [alias]
         co = checkout
-        promote = !$ZSH/bin/git-promote
-        wtf     = !$ZSH/bin/git-wtf
-        rank-contributors = !$ZSH/bin/git-rank-contributors
+        promote = !$DOTZSH/bin/git-promote
+        wtf     = !$DOTZSH/bin/git-wtf
+        rank-contributors = !$DOTZSH/bin/git-rank-contributors
         count   = !git shortlog -sn
 [color]
         diff = auto
@@ -32,9 +32,10 @@
         # Setting to git 2.0 default to suppress warning message
         default = simple
 [filter "lfs"]
-	clean = git-lfs clean %f
-	smudge = git-lfs smudge %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
 	required = true
+	clean = git-lfs clean -- %f
 [merge "railsschema"]
   name = newer Rails schema version
   driver = "ruby -e '\n\
@@ -45,3 +46,8 @@
     end\n\
     File.open(%(%A), %(w)) {|f| f.write(b)}\n\
     exit 1 if b.include?(%(<)*%L)'"
+[user]
+	name = Igor Davydov
+	email = iskiche@gmail.com
+[credential]
+	helper = osxkeychain

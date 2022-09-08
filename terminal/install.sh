@@ -1,1 +1,2 @@
-source $ZSH/terminal/set-default-theme.sh
+echo "  Set Terminal in black!"
+source $DOTZSH/terminal/set-default-theme.sh

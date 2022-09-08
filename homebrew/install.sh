@@ -6,6 +6,7 @@
 # using Homebrew.
 
 # Check for Homebrew
+echo "  Check for Homebrew..."
 if test ! $(which brew)
 then
   echo "  Installing Homebrew for you."
@@ -20,5 +21,5 @@ then
   fi
 
 fi
-
+echo "  Homebrew is fine."
 exit 0
