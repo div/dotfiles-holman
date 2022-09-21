@@ -1,6 +1,7 @@
 cask_args appdir: '/Applications'
 
 tap 'homebrew/bundle'
+tap 'homebrew/cask-fonts'
 
 # Core
 brew "zsh"
@@ -26,6 +27,7 @@ cask 'vlc'
 cask 'calibre'
 
 # Misc
+cask 'font-fira-code'
 cask 'windscribe'
 cask 'anki'
 cask 'google-chrome'

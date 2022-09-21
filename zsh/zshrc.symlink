@@ -1,3 +1,5 @@
+export HOMEBREW_PREFIX=/opt/homebrew
+
 # # shortcut to this dotfiles path is $DOTZSH
 export DOTZSH=$HOME/.dotfiles
 
